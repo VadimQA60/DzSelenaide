@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class cardRequestFordDeliveryTest {
+public class СardRequestFordDeliveryTest {
 
     private String getFutureDate(int addDays) {
         LocalDate currentDate = LocalDate.now();
@@ -24,7 +24,7 @@ public class cardRequestFordDeliveryTest {
 
     @Test
 
-    public void CardDeliveryTest() {
+    public void сardDeliveryTest() {
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Москва");
         $(".calendar-input__custom-control input").doubleClick().sendKeys(getFutureDate(4));
